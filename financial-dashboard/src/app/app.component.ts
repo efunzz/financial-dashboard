@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ButtonModule} from 'primeng/button'
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ ButtonModule],
+  imports: [ SidebarComponent],
   template: `
-    <h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
-  
-  
+     <app-sidebar></app-sidebar>
   `,
   styleUrl: './app.component.css'
 })
