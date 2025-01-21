@@ -6,9 +6,9 @@ import {ButtonModule} from 'primeng/button'
   selector: 'app-root',
   imports: [ ButtonModule],
   template: `
-  <div class="card flex justify-center">
-    <p-button label="Check" />
-  </div>
+    <h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
   
   
   `,
