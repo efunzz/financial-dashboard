@@ -16,6 +16,9 @@ module.exports = {
         'off-white': '#F6F4F5',
         'black': '#000000',
         'white': '#FFFFFF',
+        'red': '#FDEFE4',
+        'green': '#F0FCF0',
+        'blue': '#E6F5FA',
       }
     }
   },

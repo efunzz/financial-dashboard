@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './layout/component/sidebar/sidebar.component';
+import { DashboardComponent } from './layout/component/dashboard/dashboard.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ SidebarComponent],
+  imports: [ SidebarComponent, DashboardComponent],
   template: `
-     <app-sidebar></app-sidebar>
+    <div class="layout-container flex">
+      <!-- Sidebar -->
+      <app-sidebar></app-sidebar>
+
+      <!-- Dashboard / Main Content -->
+      <div class="main-content flex-grow p-4">
+        <app-dashboard></app-dashboard>
+      </div>
+    </div>
   `,
   styleUrl: './app.component.css'
 })

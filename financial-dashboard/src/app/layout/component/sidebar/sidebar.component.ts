@@ -18,8 +18,6 @@ import { NavigationComponent } from '../navigation/navigation.component';
         <!-- Profile Section -->
          <app-profile></app-profile>
       </aside>
-  
-  
   `,
   styleUrl: './sidebar.component.css'
 })
