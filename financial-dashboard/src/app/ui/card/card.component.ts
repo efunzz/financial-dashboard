@@ -4,7 +4,6 @@ import { Component , Input} from '@angular/core';
   selector: 'app-card',
   imports: [],
   template: `
-
   <div class="shadow-lg p-4 rounded" [class]="cardColor">
     <div class="flex justify-between mb-3">
         <div>
