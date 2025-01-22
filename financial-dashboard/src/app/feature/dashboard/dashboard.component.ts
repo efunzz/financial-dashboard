@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { CardComponent } from '../../ui/card/card.component';
+import { ChartComponent } from '../../layout/chart/chart.component';
 @Component({
   selector: 'app-dashboard',
-  imports: [CardComponent],
+  imports: [CardComponent, ChartComponent],
   template: `
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <app-card 
@@ -37,6 +38,9 @@ import { CardComponent } from '../../ui/card/card.component';
         changeText="newly registered"
         cardColor="bg-blue"
     ></app-card>
+</div>
+<div class="mt-6  w-full h-[40rem]">
+      <app-chart></app-chart>
 </div>
   `
   ,
