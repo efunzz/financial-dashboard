@@ -8,7 +8,7 @@ import { TableModule } from 'primeng/table';
 <p-table [value]="transactions" [tableStyle]="{ 'width': '50rem', 'height':'15rem' , 'border':'none' }" >
     <ng-template #body let-transaction>
         <tr class=" hover:bg-gray-100 mb-2  border-none">
-            <td class="px-4 py-2  "><i class='{{ transaction.code }}'></i></td>
+            <td class="px-4 py-2  "><i class="{{ transaction.code }} text-orange-500"></i></td>
             <td class="px-4 py-2 ">{{ transaction.name }}</td>
             <td class="px-4 py-2 ">{{ transaction.category }}</td>
             <td class="px-4 py-2 ">{{ transaction.quantity }}</td>
