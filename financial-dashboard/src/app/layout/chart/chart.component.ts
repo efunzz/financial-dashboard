@@ -4,7 +4,7 @@ import {ChartModule} from 'primeng/chart'
   selector: 'app-chart',
   imports: [ChartModule],
   template: `
-  <p-chart type="bar" [data]="data" [options]="options"  />
+  <p-chart type="bar" [data]="data" [options]="options" width="100rem" height="30rem"  />
   
 
   `,
@@ -19,14 +19,14 @@ export class ChartComponent {
       labels: ['WANTS', 'NEEDS', 'SPENDINGS'],
       datasets: [
         {
-          label: 'Sales',
+          label: 'Expenses',
           data: [50, 75, 60],
           backgroundColor: '#95CCA2',  // Blue
           borderColor: '#95CCA2',
           borderWidth: 2,
         },
         {
-          label: 'Expenses',
+          label: 'Money Left',
           data: [40, 65, 50],
           backgroundColor: '#F0FCF0',  // Red
           borderColor: '#F0FCF0',
