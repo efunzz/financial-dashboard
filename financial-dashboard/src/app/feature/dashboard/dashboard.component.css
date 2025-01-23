@@ -1,0 +1,4 @@
+::ng-deep p-table .p-datatable-tbody tr {
+    border: none !important;
+    box-shadow: none !important;
+}

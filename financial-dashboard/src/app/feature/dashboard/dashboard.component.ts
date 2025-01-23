@@ -43,7 +43,7 @@ import { TableComponent } from '../../layout/table/table.component';
 <div class="mt-6  w-lg h-lg">
       <app-chart></app-chart>
 </div>
-<div class="rounded-lg shadow-lg overflow-hidden w-[50rem]">
+<div class="rounded-md w-[50rem] border-none">
  <app-table></app-table>
 </div>
   `

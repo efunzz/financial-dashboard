@@ -5,21 +5,13 @@ import { TableModule } from 'primeng/table';
   selector: 'app-table',
   imports: [TableModule],
   template: `
-<p-table [value]="products" [tableStyle]="{ 'max-width': '50rem' }" >
-    <ng-template #header>
-        <tr class="bg-gray-100">
-            <th class="px-4 py-2 text-left  ">Code</th>
-            <th class="px-4 py-2 text-left ">Name</th>
-            <th class="px-4 py-2 text-left ">Category</th>
-            <th class="px-4 py-2 text-left ">Quantity</th>
-        </tr>
-    </ng-template>
-    <ng-template #body let-product>
-        <tr class=" hover:bg-gray-100 border-b border-gray-300 mb-2 ">
-            <td class="px-4 py-2  ">{{ product.code }}</td>
-            <td class="px-4 py-2 ">{{ product.name }}</td>
-            <td class="px-4 py-2 ">{{ product.category }}</td>
-            <td class="px-4 py-2 ">{{ product.quantity }}</td>
+<p-table [value]="transactions" [tableStyle]="{ 'width': '50rem', 'height':'15rem' , 'border':'none' }" >
+    <ng-template #body let-transaction>
+        <tr class=" hover:bg-gray-100 mb-2  border-none">
+            <td class="px-4 py-2  "><i class='{{ transaction.code }}'></i></td>
+            <td class="px-4 py-2 ">{{ transaction.name }}</td>
+            <td class="px-4 py-2 ">{{ transaction.category }}</td>
+            <td class="px-4 py-2 ">{{ transaction.quantity }}</td>
         </tr>
     </ng-template>
 </p-table>
@@ -30,10 +22,10 @@ import { TableModule } from 'primeng/table';
 })
 export class TableComponent {
 
-  products = [
-    { code: 'pi pi-arrow-circle-up', name: 'Product A', category: 'Category 1', quantity: 100 },
-    { code: 'pi pi-arrow-circle-down', name: 'Product B', category: 'Category 2', quantity: 50 },
-    { code: 'pi pi-arrow-circle-left', name: 'Product C', category: 'Category 3', quantity: 200 },
+  transactions = [
+    { code: 'pi pi-arrow-circle-up', name: 'Groceries', category: 'Needs', quantity: 100 },
+    { code: 'pi pi-arrow-circle-down', name: 'Shopping', category: 'Wants', quantity: 50 },
+    { code: 'pi pi-arrow-circle-left', name: 'Insurance', category: 'Needs', quantity: 200 },
     
   ];
 
