@@ -4,7 +4,7 @@ import {ChartModule} from 'primeng/chart'
   selector: 'app-chart',
   imports: [ChartModule],
   template: `
-  <p-chart type="bar" [data]="data" [options]="options" class="h-[30rem]"  />
+  <p-chart type="bar" [data]="data" [options]="options"  />
   
 
   `,
@@ -16,7 +16,7 @@ export class ChartComponent {
 
   constructor() {
     this.data = {
-      labels: ['Jan', 'Feb', 'Mar'],
+      labels: ['WANTS', 'NEEDS', 'SPENDINGS'],
       datasets: [
         {
           label: 'Sales',

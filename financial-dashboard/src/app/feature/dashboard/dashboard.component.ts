@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CardComponent } from '../../ui/card/card.component';
 import { ChartComponent } from '../../layout/chart/chart.component';
+import { TableComponent } from '../../layout/table/table.component';
 @Component({
   selector: 'app-dashboard',
-  imports: [CardComponent, ChartComponent],
+  imports: [CardComponent, ChartComponent, TableComponent],
   template: `
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
     <app-card 
         title="Orders" 
         [value]="152" 
@@ -39,8 +40,11 @@ import { ChartComponent } from '../../layout/chart/chart.component';
         cardColor="bg-blue"
     ></app-card>
 </div>
-<div class="mt-6  w-full h-[40rem]">
+<div class="mt-6  w-lg h-lg">
       <app-chart></app-chart>
+</div>
+<div class="rounded-lg shadow-lg overflow-hidden w-[50rem]">
+ <app-table></app-table>
 </div>
   `
   ,
