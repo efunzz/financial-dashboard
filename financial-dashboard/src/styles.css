@@ -4,3 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --p-checkbox-background: white;
+    --p-checkbox-border-color: gray;
+    --p-checkbox-input: black;
+    --p-checkbox-icon: purple;
+    --p-checkbox-width: 24px;
+    --p-checkbox-height: 24px;
+  }
