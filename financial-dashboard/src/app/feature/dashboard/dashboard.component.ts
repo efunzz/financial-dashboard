@@ -7,22 +7,23 @@ import { ListComponent } from '../../layout/list/list.component';
   selector: 'app-dashboard',
   imports: [CardComponent, ChartComponent, TableComponent, ListComponent],
   template: `
+  <h1 class="mb-10 text-3xl font-bold">Dashboard</h1>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
     <app-card 
-        title="Orders" 
-        [value]="152" 
-        icon="pi-shopping-cart"
-        iconBg="bg-blue-100"
-        iconColor="text-blue-500"
+        title="Money In" 
+        [value]="'+$2,100'" 
+        icon="pi-plus"
+        iconBg="bg-emerald-100"
+        iconColor="text-emerald-800"
         changeValue="24 new"
         changeText="since last visit"
         cardColor="bg-green"
     ></app-card>
 
     <app-card 
-        title="Revenue" 
-        [value]="'$2,100'" 
-        icon="pi-map-marker"
+        title="Money Out" 
+        [value]="'-$400'" 
+        icon="pi-minus"
         iconBg="bg-orange-100"
         iconColor="text-orange-500"
         changeValue="%52+"
@@ -31,9 +32,9 @@ import { ListComponent } from '../../layout/list/list.component';
     ></app-card>
 
     <app-card 
-        title="Customers" 
-        [value]="28441" 
-        icon="pi-inbox"
+        title="Money Left" 
+        [value]="'$1,700'" 
+        icon="pi-wallet"
         iconBg="bg-cyan-100"
         iconColor="text-cyan-500"
         changeValue="520"
@@ -41,10 +42,12 @@ import { ListComponent } from '../../layout/list/list.component';
         cardColor="bg-blue"
     ></app-card>
 </div>
+    <h2 class="mt-10 text-3xl font-bold"> Overview </h2>
     <div class="mt-6 w-lg h-lg">
           <app-chart></app-chart>
     </div>
-    <div class="grid grid-cols-2 gap-10">
+    <h2 class="mt-10 text-2xl font-bold"> Recent Transactions </h2>
+    <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-10">
       <div class="rounded-md w-[50rem] border-none">
         <app-table></app-table>
       </div>
