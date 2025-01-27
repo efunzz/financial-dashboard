@@ -5,7 +5,7 @@ import { TableModule } from 'primeng/table';
   selector: 'app-table',
   imports: [TableModule],
   template: `
-<p-table [value]="transactions" [tableStyle]="{ 'width': '50rem', 'height':'12rem' }" >
+<p-table [value]="transactions" [tableStyle]="{  'height':'12rem' }" >
     <ng-template #body let-transaction>
         <tr class=" hover:bg-gray-100 hover:text-black ">
             <td px-4 py-2 sm:px-6 md:px-8>

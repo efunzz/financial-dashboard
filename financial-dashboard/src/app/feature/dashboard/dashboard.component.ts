@@ -7,7 +7,7 @@ import { ListComponent } from '../../layout/list/list.component';
   selector: 'app-dashboard',
   imports: [CardComponent, ChartComponent, TableComponent, ListComponent],
   template: `
-  <h1 class="mb-10 text-3xl font-bold">Dashboard</h1>
+  <h1 class="mb-10 text-3xl font-bold text-center md:text-left ">Dashboard</h1>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
     <app-card 
         title="Money In" 
@@ -42,16 +42,16 @@ import { ListComponent } from '../../layout/list/list.component';
         cardColor="bg-blue"
     ></app-card>
 </div>
-    <h2 class="mt-10 text-3xl font-bold"> Overview </h2>
+    <h2 class="mt-10 text-3xl font-bold text-center md:text-left"> Overview </h2>
     <div class="mt-6  md:w-md lg:w-lg">
           <app-chart></app-chart>
     </div>
-    <h2 class="mt-10 text-2xl font-bold"> Recent Transactions </h2>
-    <div class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-10">
-      <div class="rounded-md w-[50rem]">
+    <h2 class="mt-10 text-2xl font-bold text-center md:text-left"> Recent Transactions </h2>
+    <div class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-5">
+      <div class="rounded-md ">
         <app-table></app-table>
       </div>
-      <div>
+      <div class="p-4">
         <app-list></app-list>
       </div>
     </div>
