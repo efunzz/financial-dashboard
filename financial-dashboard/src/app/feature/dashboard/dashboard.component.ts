@@ -43,7 +43,7 @@ import { ListComponent } from '../../layout/list/list.component';
     ></app-card>
 </div>
     <h2 class="mt-10 text-3xl font-bold"> Overview </h2>
-    <div class="mt-6 w-lg h-lg md:w-md">
+    <div class="mt-6  md:w-md lg:w-lg">
           <app-chart></app-chart>
     </div>
     <h2 class="mt-10 text-2xl font-bold"> Recent Transactions </h2>

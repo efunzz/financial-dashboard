@@ -4,7 +4,7 @@ import {ChartModule} from 'primeng/chart'
   selector: 'app-chart',
   imports: [ChartModule],
   template: `
-  <p-chart type="bar" [data]="data" [options]="options" width="100rem" height="22rem"  />
+  <p-chart type="bar" [data]="data" [options]="options" width="auto"  height="22rem"  />
   
 
   `,
