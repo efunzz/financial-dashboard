@@ -47,7 +47,7 @@ import { ListComponent } from '../../layout/list/list.component';
           <app-chart></app-chart>
     </div>
     <h2 class="mt-10 text-2xl font-bold"> Recent Transactions </h2>
-    <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-10">
       <div class="rounded-md w-[50rem]">
         <app-table></app-table>
       </div>

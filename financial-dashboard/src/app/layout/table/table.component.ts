@@ -8,14 +8,14 @@ import { TableModule } from 'primeng/table';
 <p-table [value]="transactions" [tableStyle]="{ 'width': '50rem', 'height':'12rem' }" >
     <ng-template #body let-transaction>
         <tr class=" hover:bg-gray-100 hover:text-black ">
-            <td>
+            <td px-4 py-2 sm:px-6 md:px-8>
                 <div class="flex items-center justify-center rounded-full w-10 h-10 {{transaction.bgColour}}">
                     <i class="{{ transaction.code }} {{ transaction.colour }} text-xl"></i>
                 </div>
             </td>
-            <td  style="width: 15rem">{{ transaction.name }}</td>
-            <td >{{ transaction.category }}</td>
-            <td >{{ transaction.quantity }}</td>
+            <td px-4 py-2 sm:px-6 md:px-8 >{{ transaction.name }}</td>
+            <td px-4 py-2 sm:px-6 md:px-8>{{ transaction.category }}</td>
+            <td px-4 py-2 sm:px-6 md:px-8>{{ transaction.quantity }}</td>
         </tr>
     </ng-template>
 </p-table>
