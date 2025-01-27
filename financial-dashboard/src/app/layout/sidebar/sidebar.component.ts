@@ -17,11 +17,14 @@ import { ButtonModule } from 'primeng/button';
   ],
   template: `
     <!-- Desktop Sidebar -->
-    <aside class="hidden lg:flex h-screen w-64 bg-off-white text-black flex-col p-4 gap-y-60">
+    <aside class="hidden lg:flex h-screen w-64 bg-off-white text-black flex flex-col p-4 justify-between">
       <div>
         <h2 class="text-5xl font-bold ml-4">HDB</h2>
       </div>
-      <app-navigation [menuItems]="menuItems"></app-navigation>
+
+      <!-- Navigation should take up flexible space -->
+      <app-navigation [menuItems]="menuItems" ></app-navigation>
+
       <app-profile></app-profile>
     </aside>
 
@@ -38,7 +41,7 @@ import { ButtonModule } from 'primeng/button';
                     (click)="drawerVisible = false"
                     style="position: absolute; top: 20px; right: 20px; z-index: 999;" 
                     class="p-button-text"></button>
-      <div class="flex flex-col p-4 gap-y-64">
+      <div class="flex flex-col h-full p-4 justify-between">
         <div>
           <h2 class="text-5xl font-bold ml-4">HDB</h2>
         </div>
@@ -51,7 +54,7 @@ import { ButtonModule } from 'primeng/button';
     <button pButton 
             icon="pi pi-bars" 
             (click)="toggleDrawer()"
-            class="p-button-text lg:hidden top-4 left-4 z-50">
+            class="fixed lg:!hidden top-4 left-4 z-50 p-button-text">
     </button>
   `,
 })

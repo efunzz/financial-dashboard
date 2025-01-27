@@ -1,0 +1,5 @@
+@media (min-width: 967px) {
+    .hide-lg {
+      display: none !important;
+    }
+  }
